@@ -1,0 +1,29 @@
+
+//button
+.button{
+    background-color: #fff ;
+    border-radius: 25px;
+    width: 260px;
+    height:50px;  
+    border: none;
+    font-size: 16px;
+    font-weight:600;
+    font-family:  normal normal bold 16px/12px Arial, Helvetica, sans-serif;
+
+    &--gray{
+        background-color:  #E2E2E2; 
+        opacity: 1;
+    }
+
+    &__text{
+        color: #000;
+
+        &--dark-gray{
+            color: #3F3F3F;
+            font-weight: bold;
+        }
+    }
+
+}
+
+//button circle

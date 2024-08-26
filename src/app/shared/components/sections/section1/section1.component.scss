@@ -1,0 +1,196 @@
+.section1{
+    height: 580px;
+    &__header{
+        background-color: teal;
+        height: 346px;
+        &__links{
+            width: 100%;
+            height: 60px;
+            padding-top: 20px;
+            &__link{
+                margin-left: 120px;
+                
+                &__icon{
+                    color: #FFF;
+                    float: left;
+                    font-size: 18px;
+                }
+                &__text{
+                    color: #FFF;
+                    float: left;
+                    font: normal normal bold 12px/17px Verdana;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    margin-top: 2px;
+                    margin-left: 5px;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &__goal{
+            width: 721px;
+            margin: auto;
+            text-align: center;
+            &__title{
+                padding-top: 20px;
+                &__title{
+                    text-align: center;
+                    font: normal normal bold 25px/30px Montserrat;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                }
+                &__subtitle{
+                    text-align: center;
+                    font: normal normal normal 16px/24px Verdana;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                }
+            }
+            &__card{
+                margin: auto;
+                margin-top: 30px;
+                height: 259px;
+                width: 536px;
+                position: relative;
+
+                &__category{
+                    display: grid;
+                    grid-template-columns: 1fr auto; 
+                    align-items: center; 
+                    gap: 20px;
+                    padding-top:20px;
+
+                    &__info{
+                        display: flex;
+                        flex-direction: column; /* Alinea el texto verticalmente */ 
+                        justify-content: left; 
+                        align-items: start;
+                        margin-left: 20px;
+                        font-weight: bold;
+                        &__know{
+                            font-size: 18px;
+                        }
+                        &__know2{
+                            font-size: 12px;
+                        }
+                    }
+
+                    &__link{
+                        padding:20px;
+                        cursor: pointer;
+                        text-align: right;
+                        color: #00C83C;
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+                }
+
+                &__goals{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+                    padding: 0 20px; /* Padding de 20px a los lados (izquierda y derecha) */
+                    gap: 10px;
+                    &__info{
+                        &__title{
+                            font-size: 14px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            font: normal normal normal 14px/18px Verdana;
+                        }
+                        &__card{
+                            border-radius: 4px;
+                            background-color: #fff;
+                            font-size: 14px;
+                            font-weight: bold;
+                            width: 130px;
+                            margin: auto;
+                            padding: 5px;
+                            &--blue{
+                                background-color: #A5D7E1;
+                                border-radius: 4px;
+                            }
+                            &--orange{
+                                background-color: #FECD72;
+                                border-radius: 4px;
+                            }
+                            &--green{
+                                background-color: #95DBB7;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+
+                &__text{
+                    margin-left: 20px;
+                    margin-top: 50px;
+                    &__circle{
+                        float: left;
+                        background-color: #00C83C;
+                        border-radius: 100%;
+                        counter-reset: #FFF;
+                        height: 15px;
+                        width: 15px;
+                        font-size: 10px;
+                        padding: 1.5px;
+                        box-sizing: border-box;
+                        margin-top: 2px;
+                    }
+                    &__text{
+                        float: left;
+                        margin-left: 10px;
+                        text-decoration: underline;
+                        color: #00C83C;
+                        font: normal normal bold 14px/18px Montserrat;
+                        letter-spacing: 0px;
+                    }
+                }
+
+                &__image{
+                    background-image: url("/assets/img/goal.png");
+                    position: absolute;
+                    width: 131px;
+                    height: 114px;
+                    bottom: 0px;
+                    right: 0px;
+                }
+
+            }
+            &__text{
+                margin-top: 30px;
+                &__title{
+                    font: normal normal bold 25px/30px Montserrat;
+                    letter-spacing: 0px;
+                }
+                &__subtitle{
+                    font: normal normal normal 16px/24px Verdana;
+                    letter-spacing: 0px;
+                    color: #3F3F3F;
+                }
+                &__products {
+                    font: normal normal bold 16px/24px Verdana;
+                    letter-spacing: 0px;
+                    color: #3F3F3F;
+                    text-align: center; /* Asegura que el contenido textual esté centrado */
+                
+                    display: flex;            /* Activa el modo flexbox */
+                    justify-content: center;  /* Centra los elementos horizontalmente */
+                    align-items: center;      /* Centra los elementos verticalmente */
+                
+                    &__faq {
+                        background-image: url("/assets/img/faqgreen.png");
+                        width: 26px;
+                        height: 26px;
+                        margin-right: 8px;  /* Espacio entre el ícono y el texto */
+                    }
+                
+                    &__text {
+                        margin-right: 20px;
+                        /* No es necesario 'float', se eliminará para usar flexbox */
+                    }
+                }
+               
+            }
+        }
+    }
+}

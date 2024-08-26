@@ -1,0 +1,131 @@
+.header {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #000000;
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__icon {
+        width: 50px;
+        height: 80px;
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+        
+        &--green {
+            color: #00C83C;
+            font-size: 16px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+
+        &__logo {
+            background: transparent url('/assets/img/logo.png') 0% 0% no-repeat padding-box;
+            width: 119px;
+            height: 20px;
+            margin-right: 16px;
+            margin-left: 89px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__separator {
+            height: 28px;
+            width: 3px;
+            background: #3F3F3F 0% 0% no-repeat padding-box;
+            margin-left: 16px;
+        }
+
+        &__text {
+            margin-left: 16px;
+            font-size: 20px;
+            color: #000000;
+            display: flex;
+            align-items: center; 
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: 20px;
+
+            &__icon {
+                height: 24px;
+                width: 24px;
+                &--happy {
+                    background: url('/assets/img/happy.png');
+                }
+                &--hand {
+                    background: url('/assets/img/hand1.png');
+                }
+            }
+
+            &__text {
+                font: normal normal bold 14px/19px Verdana;
+                letter-spacing: 0px;
+                text-align: left;
+                text-decoration: underline;
+                &--green {
+                    color: #00C83C;
+                }
+            }
+        }
+    }
+
+    &__faqs {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-right: 100px;
+
+        &__icon {
+            background: url('/assets/img/faq.png');
+            background-size: contain; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            position: relative; /* Ensure positioning context for the tooltip */
+
+            &:hover{
+                width: 28px;
+                height: 28px;
+            }
+
+            &:hover + .header__faqs__tooltip {
+                visibility: visible; /* Show tooltip on hover */
+            }
+        }
+
+        &__tooltip {
+            visibility: hidden; 
+            color: #00C83C;
+            text-decoration: underline;
+            font: normal normal bold 12px/14px Verdana;
+            border-radius: 4px;
+            font-size: 12px;
+            z-index: 10;
+        }
+    }
+}

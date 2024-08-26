@@ -1,0 +1,101 @@
+.card-info{
+    width: 352px;
+    height: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+    opacity: 1;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    &--border-green{
+        border-bottom: 5px solid #A4D071;
+    }
+    &--border-blue-sky{
+        border-bottom: 5px solid #A5D7E1;
+    }
+    &--border-blue-black{
+        border-bottom: 5px solid #63AABC;
+    }
+    &--border-orange{
+        border-bottom: 5px solid #FF9460;
+    }
+    &__rectangle{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__title{
+        margin-top: 50px;
+        font: normal normal 18px/23px Montserrat;
+        letter-spacing: 0px;
+        color: #3F3F3F;
+        &__main{
+            font-weight: bold;
+        }
+        &__number{
+            margin-top: 5px;
+        }
+    }
+
+    &__line{
+        background-color: #00000029;
+        height: 2px;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    &__service{
+        text-align: left;
+       
+        letter-spacing: 0px;
+        &__main{
+            font: normal normal bold 18px/23px Montserrat;
+        }
+        &__number{
+            font: normal normal medium 18px/23px Montserrat;
+            color: #00C83C;
+            margin-top: 5px;
+        }
+    }
+
+    &__text{
+        background-color: #EDEDED;
+        height: 91px;
+        width: 100%;
+        margin-top: 50px;
+        letter-spacing: 0px;
+        position: relative;
+        &__text{
+            font-size: 12px;
+            padding-top: 25px;
+            padding-left: 10px;
+            text-align: center;
+        }
+        &__icon{
+            background-image: url("/assets/img/happy.png") ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 32px;
+            height: 32px;
+            top: -15px;
+            left: 0; /* Establece el anclaje izquierdo */
+            right: 0; /* Establece el anclaje derecho */
+            position: absolute;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.rectangle{
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #00C83C;
+    border-radius: 5px;
+}

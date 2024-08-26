@@ -1,0 +1,76 @@
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 501px;
+
+    &__container {
+        display: flex;
+        transition: transform 0.3s ease;
+        width: 100%;
+        padding: 0 50px; /* Ajusta este padding para acomodar las flechas */
+        box-sizing: border-box;
+    }
+
+    .card-slider {
+        min-width: calc(100% / 3); /* Cada card toma 1/3 del espacio visible */
+        margin: 0 10px; /* Espaciado entre las cards */
+    }
+
+    &__navigation {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+
+        i {
+            font-size: 24px;
+            color: white;
+        }
+
+        &--left {
+            left: 10px; /* Ajusta la distancia desde el borde izquierdo */
+        }
+
+        &--right {
+            right: 10px; /* Ajusta la distancia desde el borde derecho */
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        &.disabled {
+            background-color: #E2E2E2;
+            cursor: not-allowed;
+
+            i {
+                color: white;
+            }
+        }
+
+        &:not(.disabled) {
+            background-color: #00C83C;
+
+            &:hover {
+                background-color: #00C83C;
+            }
+        }
+    }
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
