@@ -1,4 +1,4 @@
-# Proyecto Angular
+# Proyecto Angular Skandia
 
 Este proyecto se realizó con Angular en su versión estable más reciente (17). 
 
