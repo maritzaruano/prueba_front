@@ -8,3 +8,10 @@ export interface ICard{
 export interface IListCard{
     listCard: ICard[]
 }
+
+export interface IOpcionMenu{
+    icono: string ,
+    description: string,
+    url: string,
+    selected: boolean
+}

@@ -7,6 +7,7 @@
     margin: 10px;
     padding: 20px;
     box-sizing: border-box;
+    position: relative;
 
     &--border-green{
         border-bottom: 5px solid #A4D071;
@@ -19,6 +20,10 @@
     }
     &--border-orange{
         border-bottom: 5px solid #FF9460;
+    }
+    &--background-blue{
+        // background-image: url("/assets/img/group.png");
+        background-size: cover;
     }
     &__rectangle{
         box-sizing: border-box;
@@ -89,6 +94,52 @@
             align-items: center;
             justify-content: center;
         }
+    }
+
+    &__explore{
+        height: 421px;
+
+
+        &__text{
+            padding-top: 40px;
+            font: normal normal bold 18px/23px Montserrat;
+            letter-spacing: 0px;
+        }
+
+        &__button{
+            margin-top: 20px;
+            &__explore{
+                
+                border: none;
+                background: #00C83C 0% 0% no-repeat padding-box;
+                border-radius: 18px;
+                color: #FFFFFF;
+                width: 151px;
+                height: 36px;
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    &__medal{
+        background-image: url("/assets/img/Icon\ awesome-medal.svg");
+        width: 42px;
+        height: 42px;
+        position: absolute;
+        top: 0;
+        left: 22px;
+    }
+
+    &__recommended{
+        position: absolute; 
+        right: 12px;
+        background-color: #FE9200;
+        color: #FFFFFF;
+        font: normal normal bold 10px/12px Verdana;
+        letter-spacing: 0px;
+        padding: 5px;
+        border-radius: 2px;
     }
 }
 

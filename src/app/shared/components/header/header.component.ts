@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToggleWidthService } from '../../../core/services/toggle-width.service';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(
+    private toggleWidthService: ToggleWidthService){}
+
+  toogleMenu(){
+      this.toggleWidthService.toggleWidth();
+  }
 }

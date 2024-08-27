@@ -1,3 +1,22 @@
-<div class="menu">
+<div 
+    class="menu"
+    [ngStyle]="{ 'width': isExpanded ? '231px' : '50px' }"
+    >
     <!-- Puedes agregar aquí los elementos del menú -->
+    <nav class="nav-options">
+        <ul class="nav-options__option" *ngFor="let item of optionsMenu" [ngClass]="{ 'nav-options__option--selected': item.selected}">
+            <a href="{{item.url}}"  class="nav-options__option__url" >
+                <div 
+                    class="nav-options__option__url__icon" 
+                    >
+                    <div class="nav-options__option__url__icon__icon"  style="background-image: url('/assets/img/{{item.icono}}');"></div>
+                </div>
+                <div class="nav-options__option__url__description" 
+                    [ngStyle]="{ 'display': isExpanded ? 'flex' : 'none' }" 
+                    [ngClass]="{ 'nav-options__option__url__description--white': item.selected}">
+                    <div class="nav-options__option__url__description__d">{{item.description}}</div>
+                </div>
+            </a>
+        </ul>
+    </nav>
 </div>

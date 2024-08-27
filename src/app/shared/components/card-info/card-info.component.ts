@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
 
 
+type InfoExploreType = 'info' | 'explore';
+
 @Component({
   selector: 'app-card-info',
   templateUrl: './card-info.component.html',
@@ -14,4 +16,5 @@ export class CardInfoComponent {
   @Input() numberProduct: string = '';
   @Input() productClass: string = '';
   @Input() detailInfo: string = '';
+  @Input() type : InfoExploreType = 'info';
 }

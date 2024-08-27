@@ -14,17 +14,16 @@
                 [detaildProduct]="item.detaildProduct"
                 [balanceProduct]="item.balanceProduct"
                 [productClass]="getClassForIndex(i)"
+                [type]="'info'"
                 [detailInfo]="descriptionSection"></app-card-info>
         </div>
-        <!-- <div class="card-slider">
-            <app-card-info></app-card-info>
-        </div>
+
         <div class="card-slider">
-            <app-card-info></app-card-info>
+            <app-card-info 
+                [productClass]="'card-info--background-blue'"
+                [type]="'explore'">
+            </app-card-info>
         </div>
-        <div class="card-slider">
-            <app-card-info></app-card-info>
-        </div> -->
     </div>
     <div 
         class="slider__navigation slider__navigation--right" 

@@ -3,13 +3,64 @@
     left: 0; 
     width: 50px; 
     background-color: #E2E2E2;
-    // transition: width 0.3s;
+    color: #000;
+    transition: width 0.3s;
     overflow: hidden; 
     height: 100vh;
-    // &:hover {
-    //     width: 200px; 
-    // }
-      
+    z-index: 10;
+
+
+}
+
+
+.nav-options{
+  width: 100%;
+  &__option{
+    &--selected{
+      background-color: #00C83C;
+      color: #FFF;
+    }
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+    &__url{
+      width: 100%;
+      display: flex;
+      text-decoration: none;
+      &__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        &__icon{
+          
+          vertical-align: middle;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 17px;
+          height: 17px;
+        }
+      }
+      &__description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        text-align: left;
+
+        font: normal normal medium 16px/21px Montserrat;
+        letter-spacing: 0px;
+        color: #3F3F3F;
+        &--white{
+          color: #FFF;
+        }
+        &__d{
+          
+        }
+      }
+    }
   }
+}
   
 
