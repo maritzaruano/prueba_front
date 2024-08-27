@@ -13,6 +13,7 @@ import { Section3Component } from './shared/components/sections/section3/section
 
 import { HttpClientModule } from '@angular/common/http';
 import { CurrencyNoDecimalPipe } from './shared/pipes/currency-no-decimal.pipe';
+import { SectionExploreComponent } from './shared/components/sections/section-explore/section-explore.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CurrencyNoDecimalPipe } from './shared/pipes/currency-no-decimal.pipe';
     Section2Component,
     CardInfoComponent,
     Section3Component,
-    CurrencyNoDecimalPipe
+    CurrencyNoDecimalPipe,
+    SectionExploreComponent
   ],
   imports: [
     BrowserModule,
