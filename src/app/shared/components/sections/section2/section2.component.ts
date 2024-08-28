@@ -22,25 +22,28 @@ export class Section2Component implements OnInit {
   private readonly cardWidth: number = 352; // Ancho de cada tarjeta (incluyendo márgenes, si es necesario)
   private readonly visibleCards: number = 3;
   private totalCards: number = 4; // Total de tarjetas en el slider
+  toggleWidthService: any;
 
   constructor(private renderer: Renderer2 ,
     private cardService: CardsTsService
   ) {}
+  
 
-  ngOnInit(){
-    this.cardService.getCards().pipe(
-      map(response => response.listCard),
-      tap(data => {
-        this.listCard = data;
-      }),
-      catchError(error => {
-        this.error = 'There was an error fetching the data.';
-        console.error(error);
-        // Devuelve un observable vacío para continuar con el flujo sin errores
-        return of([]);
-      })
-    ).subscribe();
-  }
+ngOnInit() {
+  this.cardService.getCards().pipe(
+    map(response => response.listCard),
+    tap(data => {
+      this.listCard = data;
+      this.totalCards = this.listCard.length + 1; // +1 para incluir la tarjeta de 'explore'
+    }),
+    catchError(error => {
+      this.error = 'There was an error fetching the data.';
+      console.error(error);
+      return of([]);
+    })
+  ).subscribe();
+}
+ 
 
   ngAfterViewInit() {
     this.updateButtonStates();

@@ -3,7 +3,7 @@
     [ngStyle]="{ 'width': isExpanded ? '231px' : '50px' }"
     >
     <!-- Puedes agregar aquí los elementos del menú -->
-    <nav class="nav-options">
+    <nav class="nav-options "  (click)="toggleMenu()">
         <ul class="nav-options__option" *ngFor="let item of optionsMenu" [ngClass]="{ 'nav-options__option--selected': item.selected}">
             <a href="{{item.url}}"  class="nav-options__option__url" >
                 <div 

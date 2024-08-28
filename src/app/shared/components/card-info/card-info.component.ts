@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output, output } from '@angular/core';
+import { ToggleWidthService } from '../../../core/services/toggle-width.service';
 
 
 type InfoExploreType = 'info' | 'explore';
@@ -9,7 +10,8 @@ type InfoExploreType = 'info' | 'explore';
   templateUrl: './card-info.component.html',
   styleUrl: './card-info.component.scss'
 })
-export class CardInfoComponent {
+export class CardInfoComponent {  
+
   @Input() balanceProduct: string = '';
   @Input() detaildProduct: string = '';
   @Input() nameProduct: string = '';
@@ -17,4 +19,12 @@ export class CardInfoComponent {
   @Input() productClass: string = '';
   @Input() detailInfo: string = '';
   @Input() type : InfoExploreType = 'info';
+
+  constructor(private toggleWidthService: ToggleWidthService) {}
+
+  toggleExploreSection() {
+    this.toggleWidthService.toggleShow();
+  }
+  
+
 }

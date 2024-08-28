@@ -1,4 +1,5 @@
 .card-info{
+    
     width: 352px;
     height: auto;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -24,6 +25,7 @@
     &--background-blue{
         // background-image: url("/assets/img/group.png");
         background-size: cover;
+        background-color: #E8EEF8;
     }
     &__rectangle{
         box-sizing: border-box;
@@ -97,7 +99,7 @@
     }
 
     &__explore{
-        height: 421px;
+        height: 361px;
 
 
         &__text{
@@ -117,6 +119,7 @@
                 width: 151px;
                 height: 36px;
                 text-decoration: underline;
+                cursor: pointer;
             }
         }
 

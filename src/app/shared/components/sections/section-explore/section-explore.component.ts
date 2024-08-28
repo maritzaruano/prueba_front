@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToggleWidthService } from '../../../../core/services/toggle-width.service';
 
 @Component({
   selector: 'app-section-explore',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './section-explore.component.scss'
 })
 export class SectionExploreComponent {
-
+  
 }
